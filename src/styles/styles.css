@@ -1,0 +1,146 @@
+body {
+
+}
+
+.dark-color-theme {
+    background: #1a521e;
+}
+
+.letter-header ul li {
+    color: #DFE0E0;
+    /* border: none; */
+}
+
+.letter-header ul li:hover {
+    color: #FAFDFF;
+}
+
+.icon-red-social-footer {
+  width: 8%;
+  margin-right: 1rem;
+}
+
+/* FOOTER */
+
+.main-footer .t4,
+.main-footer .t5,
+.main-footer .t6 {
+  color: white;
+}
+
+.main-footer {
+  padding: 16px;
+}
+
+.main-footer ul::before{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 0;
+}
+
+.link-footer a {
+  color: white;
+}
+
+/* HEADER */
+
+.main-menu.active {
+  right: 0;
+}
+
+/* MAIN */
+.main-master {
+  margin-top: 1rem;
+  color: white;
+}
+.main-master .t1,
+.main-master .t2,
+.main-master .t3,
+.main-master .t4 {
+  color: white;
+}
+
+.bg-body-theme {
+  background: #141618;
+}
+
+.section-master:nth-of-type(2) {
+  margin-top: 2rem;
+}
+.section-master:nth-of-type(3) {
+  margin-top: 2rem;
+}
+
+/* card master */
+.img-container img {
+  width: 100%;
+}
+
+.card-ofert {
+  box-shadow: 4px 4px 10px 1px rgba(100,100,100,.5);
+  background: #282D31;
+  border-radius: 4px;
+}
+
+.title-card {
+  color: var(--fourth-color);
+}
+
+/* BANNER */
+
+.bg-banner-theme {
+  background: #2A2C33;
+  color: white;
+}
+
+.title-banner {
+  color: white;
+}
+
+.title-banner::first-line {
+  color: var(--fourth-color);
+}
+
+/* CARDS VALORS */
+
+.cuadro-card-valors {
+  margin-top: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-card-valors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.description-valors {
+  color: white;
+  font-weight: 800;
+  padding: 0 1rem;
+}
+
+.container-card-valors:hover {
+  transition: opacity .3s;
+  background: rgba(40, 45, 49, .8);
+  opacity: 1;
+}
+
+/* CARD NEWS */
+.card-news {
+  box-shadow: 5px 5px 10px 1px rgba(100, 100, 100, 0.5);
+  background: #282D31;
+}
+
+.title-news {
+  color: white;
+}
