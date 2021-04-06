@@ -1,60 +1,47 @@
-body {
-
-}
-
+/* -------------------- GENERAL -------------------- */
+/* header - footer */
 .dark-color-theme {
     background: #1a521e;
 }
 
+/* header */
 .letter-header ul li {
     color: #DFE0E0;
-    /* border: none; */
 }
-
 .letter-header ul li:hover {
     color: #FAFDFF;
+  }
+/* header active in the mobile */
+.main-menu.active {
+  right: 0;
 }
 
+/* footer */
+/* icon */
 .icon-red-social-footer {
   width: 8%;
   margin-right: 1rem;
 }
-
-/* FOOTER */
-
+/* titles */
 .main-footer .t4,
 .main-footer .t5,
 .main-footer .t6 {
   color: white;
 }
-
 .main-footer {
   padding: 16px;
 }
-
-.main-footer ul::before{
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  left: 0;
-}
-
 .link-footer a {
   color: white;
 }
 
-/* HEADER */
-
-.main-menu.active {
-  right: 0;
-}
-
-/* MAIN */
+/* section main */
 .main-master {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   color: white;
 }
+/* titles of section main */
 .main-master .t1,
 .main-master .t2,
 .main-master .t3,
@@ -62,10 +49,35 @@ body {
   color: white;
 }
 
+/* color body */
 .bg-body-theme {
   background: #141618;
 }
 
+/* -------------------- MASTER -------------------- */
+/* banner */
+.bg-banner-theme {
+  background: #2A2C33;
+  color: white;
+}
+.title-banner {
+  color: white;
+}
+.title-banner::first-line {
+  color: var(--fourth-color);
+}
+
+/* card carreras */
+.card-ofert {
+  box-shadow: 4px 4px 10px 1px rgba(100,100,100,.5);
+  background: #282D31;
+  border-radius: 4px;
+}
+.title-card {
+  color: var(--fourth-color);
+}
+
+/* sections (valors & news) */
 .section-master:nth-of-type(2) {
   margin-top: 2rem;
 }
@@ -73,38 +85,8 @@ body {
   margin-top: 2rem;
 }
 
-/* card master */
-.img-container img {
-  width: 100%;
-}
-
-.card-ofert {
-  box-shadow: 4px 4px 10px 1px rgba(100,100,100,.5);
-  background: #282D31;
-  border-radius: 4px;
-}
-
-.title-card {
-  color: var(--fourth-color);
-}
-
-/* BANNER */
-
-.bg-banner-theme {
-  background: #2A2C33;
-  color: white;
-}
-
-.title-banner {
-  color: white;
-}
-
-.title-banner::first-line {
-  color: var(--fourth-color);
-}
-
-/* CARDS VALORS */
-
+/* card valor */
+/* main */
 .cuadro-card-valors {
   margin-top: 1rem;
   position: relative;
@@ -112,7 +94,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/* second section of title and description */
 .container-card-valors {
   display: flex;
   flex-direction: column;
@@ -122,25 +104,63 @@ body {
   position: absolute;
   opacity: 0;
 }
-
+/* hover in the second section */
+.container-card-valors:hover {
+  transition: opacity .3s;
+  background: rgba(40, 45, 49, .8);
+  opacity: 1;
+}
+/* description valors */
 .description-valors {
   color: white;
   font-weight: 800;
   padding: 0 1rem;
 }
 
-.container-card-valors:hover {
-  transition: opacity .3s;
-  background: rgba(40, 45, 49, .8);
-  opacity: 1;
-}
-
-/* CARD NEWS */
+/* card news */
 .card-news {
   box-shadow: 5px 5px 10px 1px rgba(100, 100, 100, 0.5);
   background: #282D31;
 }
-
 .title-news {
   color: white;
+}
+
+
+/* -------------------- INFORMAION -------------------- */
+/* the two container */
+.container-information-academia,
+.container-iframe {
+  background: #282D31;
+  border-radius: 4px;
+  padding: 1rem;
+}
+/* section of the iframe from the facebook */
+.container-iframe {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+  /* in the desktop view */
+  @media screen and (min-width: 1024px) {
+  .container-main-infomration {
+    grid-template-columns: 2fr 1fr !important;
+  }
+  .container-iframe {
+    align-items: flex-end;
+  }
+}
+
+
+
+
+/* -------------------- ACADEMIA -------------------- */
+/* -------------------- CONCOCER -------------------- */
+/* -------------------- CONTACTO -------------------- */
+
+
+/* -------------------- ERROR 404 -------------------- */
+.image-error {
+  margin-bottom: 2rem;
 }
