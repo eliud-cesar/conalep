@@ -156,8 +156,54 @@
 
 
 /* -------------------- ACADEMIA -------------------- */
+
+
 /* -------------------- CONCOCER -------------------- */
+/* container de todo */
+.container-mision-vision {
+  background: #282D31;
+  border-radius: 4px;
+  padding: 1rem;
+}
+/* the works, to make the :: after look at a distance equal to the word vertically */
+.vision,
+.mision {
+  display: flex;
+}
+/* general properties of the two words */
+.vision::after,
+.mision::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 25%;
+  height: 30px;
+  width: 30px;
+}
+/* image of the after in the work mision */
+.mision::after {
+  background: url(./../images/objetivo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* image of the after in the work vision */
+.vision::after {
+  background: url(./../images//vision.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1024px) {
+  /* distance of top and left */
+  .mision::after,
+  .vision::after {
+    margin-top: .2%;
+    left: 15%;
+  }
+}
+
 /* -------------------- CONTACTO -------------------- */
+/* se reciclo el mismo diseño de la pagina de informacion, se le añadio la clase .container-information-academia, para no hacer mas codigo */
 
 
 /* -------------------- ERROR 404 -------------------- */

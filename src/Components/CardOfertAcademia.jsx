@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const CardOfertAcademia = ({Image, TitleOfert, Description, url}) => (
     <article className="s-shadow-bottom card-ofert">
@@ -10,7 +11,7 @@ const CardOfertAcademia = ({Image, TitleOfert, Description, url}) => (
             <h3 className="title-card"> {TitleOfert} </h3>
             <p class="s-mb-0"> {Description} </p>
         </div>
-        <a href={`/carreras/${url}`} className="button dark-color full">Leer más...</a>
+        <Link to={`/carreras/${url}`} className="button dark-color full">Leer más...</Link>
     </article>
 )
 
