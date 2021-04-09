@@ -13,11 +13,15 @@ import Footer from './Components/Footer';
 // Pages
 import Master from './Pages/Master.jsx'
 import Infomration from './Pages/Information';
-import Contacto from './Pages/Contacto';
+import Carreras from './Pages/Carreras';
 import Conocer from './Pages/Conocer';
+import Contacto from './Pages/Contacto';
+import CarrerasAcademia from './Pages/CarrerasAcademia';
 
 // Page Not Found
 import PageNotFound from './Pages/PageNotFound';
+
+// Testing
 
 const App = () => (
   <Router>
@@ -29,6 +33,8 @@ const App = () => (
       <Route path="/informacion" component={ Infomration } />
       <Route path="/contacto" component={ Contacto } />
       <Route path="/conocenos" component={ Conocer } />
+      <Route path="/academia" component={ Carreras } />
+      <Route path="/carreras/:carrera" component={ CarrerasAcademia } />
 
       <Route component={ PageNotFound } />
     </Switch>
