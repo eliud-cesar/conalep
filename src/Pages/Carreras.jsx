@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import TitleMaster from '../Atoms/TitleMaster';
+import ImageBanner from './../images/page-header.jpg'
 
 const Carreras = () => (
     <div className="ed-grid main-master">
 
         {/* Banner */}
         <div className="img-container container-academia-img s-ratio-16-9 s-radius-tr s-ratius-tl">
-            <img src="http://www.conalepometepec139.com.mx/wp-content/themes/wallstreet/images/page-header-bg.jpg" alt="Conalep" className="image-banner-academia "/>
+            <img src={ImageBanner} alt="Conalep" className="image-banner-academia "/>
         </div>
 
         {/* Description */}
