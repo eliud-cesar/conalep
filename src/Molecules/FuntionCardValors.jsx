@@ -1,5 +1,6 @@
 import React from 'react';
 import CardValors from '../Components/CardValors';
+import withLoader from '../HOC/withLoader';
 
 const FuntionCardValors = ({ ApiData }) => {
     return(
@@ -13,4 +14,4 @@ const FuntionCardValors = ({ ApiData }) => {
     )
 }
 
-export default FuntionCardValors;
+export default withLoader("ApiData", FuntionCardValors );

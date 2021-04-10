@@ -1,5 +1,6 @@
 import React from 'react';
 import CardNews from '../Components/CardNews';
+import withLoader from '../HOC/withLoader';
 
 const FuntionCardNews = ({ dataApi }) => {
     return(
@@ -13,4 +14,4 @@ const FuntionCardNews = ({ dataApi }) => {
     )
 }
 
-export default FuntionCardNews;
+export default withLoader("dataApi", FuntionCardNews);

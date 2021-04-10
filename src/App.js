@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Styles
 import './styles/StylesEDteam.scss';
 import './styles/styles.css'
+import './styles/loader.css'
 
 // Components Fixeds
 import Header from './Components/Header';
@@ -22,6 +23,8 @@ import CarrerasAcademia from './Pages/CarrerasAcademia';
 import PageNotFound from './Pages/PageNotFound';
 
 // Testing
+import Loader from './test/Loader';
+
 
 const App = () => (
   <Router>
@@ -35,8 +38,12 @@ const App = () => (
       <Route path="/conocenos" component={ Conocer } />
       <Route path="/academia" component={ Carreras } />
       <Route path="/carreras/:carrera" component={ CarrerasAcademia } />
+      
+      {/* TESTING */}
+      <Route path="/loading" component={Loader} />
 
       <Route component={ PageNotFound } />
+
     </Switch>
 
     < Footer />

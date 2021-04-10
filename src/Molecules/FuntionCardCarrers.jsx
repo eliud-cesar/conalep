@@ -1,5 +1,6 @@
 import React from 'react';
 import CardOfertAcademia from '../Components/CardOfertAcademia';
+import withLoader from '../HOC/withLoader';
 
 const FuntionCardCarrers = ({ ApiData }) => {
     return(
@@ -14,4 +15,4 @@ const FuntionCardCarrers = ({ ApiData }) => {
     )
 }
 
-export default FuntionCardCarrers;
+export default withLoader("ApiData" , FuntionCardCarrers);
